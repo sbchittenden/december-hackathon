@@ -355,12 +355,12 @@ button.load-more-container__button:hover {
   width: 75px;
   height: 75px;
   border-radius: 100%;
-  margin: 10px auto;
+  margin: 10px auto 20px auto;
   display: block;
 }
 
 .footer__authors__authorsContainer__author > p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   text-align: center;
   margin: 0 auto;
   font-weight: bolder;
@@ -370,7 +370,15 @@ button.load-more-container__button:hover {
 
 /*MEDIA QUERIES*/
 
+
+
 @media only screen and (max-width: 1200px) {
+  .student-image-grid__image-cont {
+    flex: 0 0 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .student-image-grid__image-cont {
     flex: 0 0 100%;
   }
