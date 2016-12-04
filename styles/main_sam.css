@@ -4,33 +4,50 @@
 
 body {
   margin: 0;
+<<<<<<< HEAD
   background: #dfe7e9;
     align-items: center;
   justify-content: center;
   font-family: "Roboto", Arial, sans-serif;
+=======
+  background: #eee;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+>>>>>>> sam_development
 }
 
-header,footer{
-    background-color: rgb(30, 34, 38);
+header,
+footer {
+  background-color: rgb(30, 34, 38);
 }
+
+
 /**********/
+
+
 /* HEADER */
+
+
 /**********/
 
-header{
+header {
   width: 100%;
   display: flex;
   padding: 15px 15px 23px;
   align-items: center;
+<<<<<<< HEAD
   transition: all .4s;
+=======
+>>>>>>> sam_development
 }
 
-.header__logo{
+.header__logo {
   width: 80px;
   padding: 10px;
 }
 
-.header__title{
+.header__title {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -41,6 +58,7 @@ header{
   margin-left: 5px;
 }
 
+<<<<<<< HEAD
 .header__title__main{
   color: rgb(164,188,193);
   font-family: "Roboto Slab", Arial, sans-serif;
@@ -51,20 +69,36 @@ header{
      font-size: 0.45em;
     color: rgb(134, 156, 161)
 ;
+=======
+.header__title__main {
+  color: rgb(164, 188, 193);
 }
 
-.header__title__main--bovBlue{
+.header__title__subtitle {
+  font-size: 0.35em;
+  color: rgb(134, 156, 161);
+>>>>>>> sam_development
+}
+
+.header__title__main--bovBlue {
   color: #42bcda;
 }
 
+<<<<<<< HEAD
 .header__title__main--studentBlue {
   color: #d3e9ee;
 }
+=======
+>>>>>>> sam_development
 
 /* HEADER__DROPDOWN-NAV */
 
 .header__dropdown-nav {
+<<<<<<< HEAD
   padding: 12px 14px;
+=======
+  padding: 7px;
+>>>>>>> sam_development
   background-color: #272b30;
   border: #272b30;
   border-radius: 4px;
@@ -80,6 +114,7 @@ header{
   transition: all .3s;
 }
 
+<<<<<<< HEAD
 .header__dropdown-nav:hover {
   background-color: #3f444a;
   }
@@ -91,11 +126,25 @@ header{
 
 .circles{
   width: 23px;
+=======
+.header__dropdown-nav__dropdown-arrow {
+  color: rgb(134, 156, 161);
+  cursor: pointer;
+}
+
+.circles {
+  width: 20px;
+>>>>>>> sam_development
   margin-right: 5px;
   overflow: auto;
 }
 
+<<<<<<< HEAD
 .circle{
+=======
+.circle {
+  background-color: white;
+>>>>>>> sam_development
   float: left;
   width: 5px;
   height: 5px;
@@ -140,17 +189,23 @@ header{
   background-color:   #5ac9e3;
 }
 
-/********/
-/* MAIN */
+
 /********/
 
-main{
+
+/* MAIN */
+
+
+/********/
+
+main {
   width: 100%;
 }
 
+
 /* MAIN_HEADER */
 
-.main__header{
+.main__header {
   display: flexbox;
   padding: 50px 40px;
   overflow: auto;
@@ -241,31 +296,72 @@ main{
 }
 
 /* STUDENT IMAGE GRID */
-.student-image-grid{
+
+.student-image-grid {
   display: flex;
   flex-flow: row wrap;
 }
 
-.student-image-grid__image-cont{
-  width: 10%;
+.student-image-grid__image-cont {
+  /*width: 10%;*/
   flex: 0 0 25%;
-/*  height: 190px;*/
+  /*  height: 190px;*/
+  position: relative;
+  /* used to transform picture element on image click */
 }
 
-.student-image-grid__image-cont__image{
+.student-image-grid__image-cont__image {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
-/**********/
-/* FOOTER */
+
+/* class to be applied to .student-image-grid__image-cont__image when clicked */
+
+.student-image-grid__image-cont__image--active {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+
+/* picture element containing student image */
+
+.student-image-grid__image-cont__picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* class to be applied to .student-image-grid__image-cont__picture when clicked */
+
+.student-image-grid__image-cont__picture--active {
+  position: fixed;
+  top: 5em;
+  left: 50%;
+  z-index: 500;
+  transform: translateX(-50%);
+  width: 62.5em;
+  height: 47.5em;
+}
+
+
 /**********/
 
-footer{
+
+/* FOOTER */
+
+
+/**********/
+
+footer {
   padding: 20px;
   width: 100%;
 }
 
+<<<<<<< HEAD
 button.load-more-container__button {
     background: #404b56;
     border: none;
@@ -297,9 +393,14 @@ button.load-more-container__button:hover {
     width: 70%;
     margin: 0 auto;
     border-top: 1px solid rgba(64, 75, 86, 0.6);
+=======
+.footer__nav {
+  font-size: 12px;
+  color: rgb(134, 156, 161);
+>>>>>>> sam_development
 }
 
-.footer__nav__list{
+.footer__nav__list {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -309,12 +410,12 @@ button.load-more-container__button:hover {
   padding-left: 0;
 }
 
-.footer__nav__list > li{
+.footer__nav__list > li {
   display: block;
   margin: 5px;
 }
 
-.footer__nav__social-media{
+.footer__nav__social-media {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -324,14 +425,14 @@ button.load-more-container__button:hover {
   padding-left: 0;
 }
 
-.footer__nav__social-media > li{
+.footer__nav__social-media > li {
   width: 1.4em;
   font-size: 1.4em;
   display: block;
   margin: 10px;
 }
 
-.footer__nav__social-media > li img{
+.footer__nav__social-media > li img {
   width: 70%;
   position: relative;
   top: 2px;
