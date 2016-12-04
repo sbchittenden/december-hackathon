@@ -246,6 +246,16 @@ main{
   width: 10%;
   flex: 0 0 25%;
 /*  height: 190px;*/
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.student-image-grid__image-cont:hover {
+  opacity: .7;
 }
 
 .student-image-grid__image-cont__image{
